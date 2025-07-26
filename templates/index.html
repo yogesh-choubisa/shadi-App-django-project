@@ -1,0 +1,441 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!--Banner/Hero Section -->
+<section class="section-block banner">
+<div class="flower-1 bg-img"></div>
+<div class="flower-2 bg-img"></div>
+<div class="container-xl">
+<div class="row">
+<div class="col-md-6">
+<div class="banner-slider">
+<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="{% static 'image/banner-slider-6.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-9.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-2.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-3.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-4.webp' %}" />      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'image/banner-slider-5.webp' %}" />      </div>
+      
+      <div class="swiper-slide">
+        <img src="{% static 'image/banner-slider-7.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-8.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-1.webp' %}" />      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="{% static 'image/banner-slider-6.webp' %}" />      </div>
+       <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-9.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-2.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-3.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-4.webp' %}" />      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'image/banner-slider-5.webp' %}" />      </div>
+     
+      <div class="swiper-slide">
+        <img src="{% static 'image/banner-slider-7.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-8.webp' %}" />      </div>
+      <div class="swiper-slide">
+         <img src="{% static 'image/banner-slider-1.webp' %}" />      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="banner-content">
+<div class="banner-heading">
+<div class="console-container"><span class="h1" id='text'></span></div>
+<h4>Connecting Hearts, One Match at a Time.</h4>
+<p>Discover a world of possibilities with our easy-to-use marriage app. Start your journey towards a lifetime of happiness today!</p>
+<div class="flower-3 bg-img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Counter Section -->
+<section class="section-block counter-bl">
+<div class="container-xl">
+<div class="section-title">
+<h2>Your Forever is our priority</h2>
+</div>
+<div class="container-sm">
+            <div class="count-item">
+            <div class="count-content">
+            <div class="icon icon-member"></div>
+            <figure class="countdown h2">15,000</figure>
+                <h5>NO. OF Members</h5>
+            </div>
+                </div>
+            <div class="count-item">
+            <div class="count-content">
+            <div class="icon icon-stories"></div>
+            <figure class="countdown h2">5,000</figure>
+                <h5>Successful Stories</h5>
+            </div>
+                </div>
+            <div class="count-item">
+            <div class="count-content">
+            <div class="icon icon-city"></div>
+            <figure class="countdown h2">2,000</figure>
+                <h5>Cities Presence</h5>
+            </div>
+            </div>
+        </div>
+</div>
+</div>
+</section>
+<!--Download Section -->
+<section class="section-block download-bl bg-parallax">
+<div class="container-xl">
+<div class="parallax-text">
+<h3>Download The India's Number 1 App For Marriage</h3>
+<div class="download-bnts">
+<a href="#" class="down-btn btn-appstore"> 
+<img src="{% static 'image/btn-appstore.webp' %}" /></a>
+<a href="#" class="down-btn btn-playstore"> 
+<img src="{% static 'image/btn-playstore.webp' %}" /></a></div>
+</div>
+</div>
+</section>
+<!--Feature Section -->
+<section id="feature-bl" class="section-block feature-bl ">
+<div class="container-xl">
+<div class="section-title">
+<h2>Features Section</h2>
+</div>
+<div class="owl-carousel owl-theme feature-slider">
+      <div class="item">
+      <div class="feature-item">
+<div class="feat-icon">
+<div class="icon icon-meet"></div>
+</div>
+<div class="feat-cont">
+<h5>Personalized Matches</h5>
+<p>Get matches based on your preferences and values.</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="feature-item">
+<div class="feat-icon">
+<div class="icon icon-lock"></div>
+</div>
+<div class="feat-cont">
+<h5>Secure & Confidential</h5>
+<p>Your privacy is our priority. Enjoy a safe and secure platform.</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="feature-item">
+<div class="feat-icon">
+<div class="icon icon-chat"></div>
+</div>
+<div class="feat-chat">
+<h5>Easy Communication</h5>
+<p>Connect with potential partners through chat and video calls.</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="feature-item">
+<div class="feat-icon">
+<div class="icon icon-ring"></div>
+</div>
+<div class="feat-cont">
+<h5>Success Stories</h5>
+<p>Hear from couples who found their perfect match through us.</p>
+</div>
+</div>
+      </div>
+      </div>
+</div>
+</section>
+<!--Proces Section -->
+<section class="section-block process-bl ">
+<div class="container-xl">
+<div class="section-title">
+<h2>How Marriage App Works For Step By Step Guide</h2>
+</div>
+<div class=" row" >
+<div class="col-md-6 mb-4">
+<div class="process-item wow animate__animated animate__slideInLeft">
+<div class="process-icon">
+<div class="number">1</div>
+<div class="icon icon-user"></div>
+</div>
+<div class="process-cont">
+<h5>Create Your Profile :-</h5>
+<p>Sign up and fill out your profile with details about yourself and what you’re looking for in a partner.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="process-item wow animate__animated animate__slideInRight">
+<div class="process-icon">
+<div class="number">2</div>
+<div class="icon icon-search"></div>
+</div>
+<div class="process-cont">
+<h5>Search Your life partner :-</h5>
+<p>Search life partner as per your expectation and as per your choice.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="process-item wow animate__animated animate__slideInLeft">
+<div class="process-icon">
+<div class="number">3</div>
+<div class="icon icon-match"></div>
+</div>
+<div class="process-cont">
+<h5>Get Matched :-</h5>
+<p>Our algorithm suggests matches based on your preferences and interests.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4">
+<div class="process-item wow animate__animated animate__slideInRight">
+<div class="process-icon">
+<div class="number">4</div>
+<div class="icon icon-meet"></div>
+</div>
+<div class="process-cont">
+<h5>Connect & Communicate :-</h5>
+<p>Initiate conversations and get to know your matches through our secure messaging system.</p>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="process-item wow animate__animated animate__slideInLeft">
+<div class="process-icon">
+<div class="number">5</div>
+<div class="icon icon-gro"></div>
+</div>
+<div class="process-cont">
+<h5>Plan Your Future :-</h5>
+<p>Once you find someone special, take the next steps with confidence. Our support team is here to assist you along the way.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!--FAQ Section -->
+<section id="faq-bl" class="section-block faq-bl">
+<div class="container-xl">
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+</div>
+<div class="row">
+<div class="col-md-5 mb-4">
+<div class="faq-img-bl">
+<div class="big-img">
+<img class="faq-img img-responsive mb-3"  src="{% static 'image/banner-slider-6.webp' %}" />
+</div>
+<div class="small-img">
+<img class="faq-img img-responsive mb-3"  src="{% static 'image/banner-slider-9.webp' %}" />
+</div>
+</div>
+</div>
+<div class="col-md-7 mb-4">
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">
+     What is Marriage App?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      Marriage App is a revolutionary marriage app designed to help individuals find their perfect life partner. Our platform uses advanced algorithms and personalized matchmaking features to connect you with potential matches based on your preferences, interests, and values.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+     How do I create a profile?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      Creating a profile is easy! Download the Marriage App  from the App Store or Google Play, sign up with your email or social media account, and follow the prompts to enter your details. You’ll be able to upload photos, fill out your preferences, and write a brief bio.
+    </div>
+    
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+      	 How can I find matches?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+     You can find matches by browsing profiles that fit your criteria or by using our app's advanced search filters. You can also receive match suggestions based on your preferences and interactions.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+    Is my data safe with Marriage App?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      Yes, your privacy and security are our top priorities. We use advanced encryption technology to protect your data and ensure that your personal information is secure. For more details, please refer to our Privacy Policy.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+    How can I upgrade to a premium membership?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      To upgrade to a premium membership, go to the app’s settings, select "Upgrade," and choose the plan that best suits your needs. Follow the instructions to complete your purchase.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+   How can I report inappropriate behavior or content?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      If you encounter inappropriate behavior or content, please report it through the app. Go to the profile or message in question, select the "Report" option, and provide details about the issue. Our team will review the report and take appropriate action.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+    Can I use Marriage App internationally?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      Yes, Marriage App is available for users around the world. However, please be aware that some features or services may vary depending on your location.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">
+   How can I contact Marriage App for further inquiries?
+      <span class="icon"><i class="fa-solid fa-arrow"></i></span>
+    </div>
+    <div class="accordion-content">
+      For any additional questions or support, you can contact us via email at [support@appname.com] or use the contact form on our website. We’re here to help!
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Contact/From Section -->
+<section id="contact-bl" class="section-block contact-form">
+  <div class="container-xl">
+    <div class="section-title">
+      <h2>Contact Form for Marriage App</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contact-content">
+          <div class="icon cont-icon mb-3"></div>
+          <h3 class="mb-3">We’re here to help</h3>
+          <p>If you have any questions or need assistance, fill out the form. We look forward to hearing from you!</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <form method="post" action="{% url 'contact' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn-main">Submit A Message</button>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Testimonial Section -->
+<section class="section-block testimonial-bl">
+<div class="container-xl">
+<div class="section-title">
+<h2>Stories of Happily Ever After</h2>
+</div>
+<div class="owl-carousel test-slider">
+      <div class="item">
+      <div class="test-item">
+      <div class="test-img">
+      <img src="{% static 'image/banner-slider-9.webp' %}" />
+      </div>
+      <div class="test-cont">
+<h4>Neha & Rahul</h4>
+<p>We tried several apps, but this one helped us find true love. The interface is easy to use, and the profile selection is top-notch. Today, we’re partners for life, all thanks to this app.</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="test-item">
+      <div class="test-img">
+      <img src="{% static 'image/banner-slider-2.webp' %}" />
+      </div>
+      <div class="test-cont">
+<h4>Pooja & Ankit</h4>
+<p>This app was a blessing for us. It helped us find our dream partner. We’re forever grateful for the help we received here!</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="test-item">
+      <div class="test-img">
+      <img src="{% static 'image/banner-slider-7.webp' %}" />
+      </div>
+      <div class="test-cont">
+<h4>Ayesha & Sameer</h4>
+<p>We met through this app, and it was love at first conversation. Now, we’re living a happy married life, all thanks to this platform!</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="test-item">
+      <div class="test-img">
+      <img src="{% static 'image/banner-slider-2.webp' %}" />
+      </div>
+      <div class="test-cont">
+<h4>Sneha & Arjun</h4>
+<p>This app brought us together and turned our dreams into reality. If you’re serious about finding your life partner, this app is a must-try.</p>
+</div>
+</div>
+      </div>
+      <div class="item">
+      <div class="test-item">
+      <div class="test-img">
+      <img src="{% static 'image/banner-slider-6.webp' %}" />
+      </div>
+      <div class="test-cont">
+<h4>Rhea & Saurabh</h4>
+<p>This app is amazing! We share the same values, thoughts, and interests, all thanks to this platform. Now, we’re happily married and couldn’t be more content.</p>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+</section>
+
+{%endblock%}

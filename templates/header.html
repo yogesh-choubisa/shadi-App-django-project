@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Marriage app pramoting website">
+<meta name="keywords" content="Mariiage, Vivah, Shadi">
+<title>Marriage App Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" type="image/x-icon" href="{%static 'image/flower-3.webp'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css'%}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.carousel.min.css'%}" />
+<link rel="stylesheet" type="text/css" href="{%static 'assets/css/swiper-bundle.min.css'%}" />
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+<style>
+
+  .thanks-page {
+    background-color: #fbf1ee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .thanks-box-bl {
+    max-width: 600px;
+    padding: 50px;
+    background-color:var(--bg-dark);;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 12px;
+    text-align: center;
+  }
+</style>
+</head>
+<body> 
+<!--Navbar Section -->
+<header>
+<nav class="navbar">
+  <div class="container-xl">
+    <div class="logo">
+      <a href="{% url 'index' %}">
+      <img src="{% static 'image/shadi-logo.webp' %}" class="img-responsive">
+    <div class="logo-text">Shadi
+    <span>Forever</span>
+    
+    </div>
+    </a></div>
+    <ul class="nav-list" id="nav-list">
+      
+      <li><a href="{% url 'index'%}#feature-bl">Feature</a></li>
+      <li><a href="{% url 'index' %}#faq-bl">FAQ</a></li>
+      <li><a href="{% url 'contact' %}#contact-bl">Contact</a></li>
+      <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+      <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+      <li><button class="btn-main trigger_1">Download</button>
+<div class="modal_1">
+    <div class="modal-content_1">
+        <div class="modal-bl">
+        <span class="close-button_1">×</span>
+        <div class="mobal-img">
+        <img class="img-responsive" src="{% static 'image/banner-slider-9.webp' %}"/>        </div>
+        <div class="modal-cont">
+        <div>
+        <h4>
+        Download The India's Number 1 App For Marriage        </h4>
+        <div class="download-bnts">
+<a href="#" class="down-btn btn-appstore"> 
+<img src="{%static 'image/btn-appstore.webp'%}"></a>
+<a href="#" class="down-btn btn-playstore"> 
+<img src="{%static 'image/btn-playstore.webp'%}"></a></div>
+</div>
+</div>
+		</div>
+    </div>
+</div>
+</li>
+    </ul>
+    <div class="burger" id="burger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</nav>
+</header>
