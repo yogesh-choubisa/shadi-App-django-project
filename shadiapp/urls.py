@@ -3,6 +3,9 @@ from django.urls import path
 from shadiapp import views
 
 urlpatterns = [
+    path('signup/', views.signup_view, name='signup'),
+    path('login/', views.login_view, name='login' ),
+    path('logout/', views.logout_view, name='logout'),
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('privacy/', views.privacy, name='privacy'),

@@ -46,17 +46,30 @@ TEMPLATES = [
         },
     },
 ]
+# login url
+LOGIN_URL = '/login/'
+
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'shadiapp.wsgi.application'
 
 # SQLite database (you can later replace this with PostgreSQL if needed)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': config('DB_ENGINE', default='django.db.backends.sqlite3'),
+#         'NAME': BASE_DIR / config('DB_NAME', default='db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': config('DB_ENGINE', default='django.db.backends.sqlite3'),
-        'NAME': BASE_DIR / config('DB_NAME', default='db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_test',
+        'USER': 'postgres',
+        'PASSWORD': 'y0gesh@1234',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
