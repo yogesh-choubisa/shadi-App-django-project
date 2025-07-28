@@ -1,5 +1,7 @@
 from pathlib import Path
 from decouple import config, Csv
+from decouple import config
+
 import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -67,7 +69,7 @@ DATABASES = {
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT'),
+        'PORT': config('DB_PORT', cast=int),
     }
 }
 
